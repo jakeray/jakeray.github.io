@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1>Idle WIP</h1>
+<h2>Onlcick Events</h2>
+
+<p>The onclick event triggers a function when an element is clicked on.</p>
+<p>Click to trigger a function that will output a tick</p>
+
+<button onclick="clickTick()">Click me</button>
+
+<p id="Clicker"></p>
+
+<script>
+function clickTick() {
+    let number = 0
+    document.getElementById("Clicker").innerHTML = "Count: " + (number + 1);
+}
+</script>
+
 </body>
 </html>
