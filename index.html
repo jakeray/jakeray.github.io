@@ -12,9 +12,10 @@
 <p id="Clicker"></p>
 
 <script>
+var count = 0
 function clickTick() {
-    let number = 0
-    document.getElementById("Clicker").innerHTML = "Count: " + (number + 1);
+    count += 1;
+    document.getElementById("Clicker").innerHTML = "Count: " + count;
 }
 </script>
 
