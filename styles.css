@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(3, 49, 55);
+}
+
+table {
+    color: white;
+    margin-left: auto; 
+    margin-right: auto;
+    border-spacing: 30px;
+
+    border:5px double rgb(104, 118, 119);
+}
+
+h1 {
+    color: white;
+}

@@ -1,23 +1,39 @@
-<!DOCTYPE html>
 <html>
-<body>
-<script type = "text/javascript" src="functions.js"></script>
-<h1>Idle WIP</h1>
-<h2>Onlcick Events</h2>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
 
-<p>The onclick event triggers a function when an element is clicked on.</p>
-<p>Click to trigger a function that will output a tick</p>
+	<body>
 
-<!-- <button onclick="clickTick()">Click me</button>  -->
-<p id="Ticker"></p>
+        <h1>Currently: <span id="headerskill">None</span></h1>
 
-<script>
+        <table>
+            <tr>
+                <th>Woodcutting</th>
+                <th>Mining</th>
+            </tr>
+            <tr>
+                <th><button onclick="chopWood(1)">Chop Wood</button></th>
+                <th><button onclick="mineCoal(1)">Mine Coal</button></th>
+            </tr>
+            <tr>
+		        <th>Logs: <span id="logs">0</span>
+                <th>Coal: <span id="coal">0</span>
+            </tr>
+            <tr>
+                <th><button onclick="buyAxes()">Buy Axes</button></th>
+                <th><button onclick="buyPickAxes()">Buy PickAxes</button></th>
+            </tr>
+            <tr>
+                <th>Axes: <span id="axes">0</span></th>
+                <th>PickAxes: <span id="pickaxes">0</span></th>
+            </tr>
+            <tr>
+                <th>Axe Cost: <span id="axesCost">10</span></th>
+                <th>PickAxe Cost: <span id="pickaxesCost">10</span></th>
+            </tr>
+        </table>
 
-var a = setInterval(() => { clock(); }, 1000);
-
-document.getElementById("Ticker").innerHTML = a;
-
-</script>
-
-</body>
+		<script type="text/javascript" src="skills.js"></script>
+	</body>
 </html>
